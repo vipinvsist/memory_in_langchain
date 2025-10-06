@@ -17,4 +17,3 @@ prompt = ChatPromptTemplate.from_messages([("system", system), ("human", human)]
 chain = prompt | chat
 response = chain.invoke({"input": "Why is the Higgs Boson important?"})
 print(response.content)
-""
